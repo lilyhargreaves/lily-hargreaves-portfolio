@@ -12,6 +12,38 @@ li, a, button {
     text-decoration: none;
 }
 
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    line-height: 2.5;
+}
+
 header, footer {
     display: flex;
     justify-content: flex-end;
@@ -48,4 +80,30 @@ button {
 
 button:hover {
     background-color: rgba(0,136,169,0.8);  
+}
+
+.container {
+    padding: 30px 10%;
+}
+
+.even-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.project {
+    border: 3px solid white;
+    width: 100%;
+    height: auto;
+}
+
+.profile-picture {
+    width: 300px;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
