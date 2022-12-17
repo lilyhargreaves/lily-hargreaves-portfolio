@@ -5,7 +5,7 @@
     background-color: #24252A;
 }
 
-li, a, button {
+li, nav a, footer a, button {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: white;
@@ -165,9 +165,33 @@ img {
 @media only screen and (max-width: 600px) {
     .even-columns {
         display: block;
+        margin: 0;
     }
   }
 
-  #about-me p {
-    margin-top: 10px;
+  @media only screen and (max-width: 800px) {
+    .profile-picture {
+        display: none;
+    }
+    .even-columns {
+        padding: 0;
+    }
+    p, li, nav a, button {
+        font-size: 12px;
+    }
+    footer {
+        display: block;
+    }
+    .nav-links li {
+        display: inline-block;
+        padding: 0px;
+    }
+    .project h3, .project p {
+        width: 50%;
+    }
+
+    #about-me p {
+        margin-top: 10px;
+        flex-wrap: nowrap;
+    }
   }
