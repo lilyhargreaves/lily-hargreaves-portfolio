@@ -18,14 +18,17 @@ h1 {
     color: white;
     text-decoration: none;
     line-height: 1.5;
+    text-decoration: underline; 
+    text-decoration-color: #0088a9;
 }
 
 h2 {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     color: white;
-    text-decoration: none;
     line-height: 1.5;
+    text-decoration: underline; 
+    text-decoration-color: #0088a9;
 }
 
 h3 {
@@ -36,6 +39,18 @@ h3 {
     line-height: 1.5;
 }
 
+.project h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.5;
+    background-color: #0088a9;
+    width: 33%;
+    position: absolute;
+    top: 50px;
+}
+
 p {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -44,9 +59,28 @@ p {
     line-height: 2.5;
 }
 
-header, footer {
+.project p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    line-height: 2.5;
+    background-color: #0088a9;
+    width: 33%;
+    position: absolute;
+    top: 75px;
+}
+
+header {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
@@ -82,6 +116,17 @@ button:hover {
     background-color: rgba(0,136,169,0.8);  
 }
 
+button.resume-button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
 .container {
     padding: 30px 10%;
 }
@@ -91,12 +136,15 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin: 0;
 }
 
 .project {
     border: 3px solid white;
     width: 100%;
     height: auto;
+    margin: 0 20px 0 0;
+    position: relative;
 }
 
 .profile-picture {
@@ -106,4 +154,20 @@ button:hover {
 img {
     width: 100%;
     height: auto;
+    z-index: -1;
 }
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .even-columns {
+        display: block;
+    }
+  }
+
+  #about-me p {
+    margin-top: 10px;
+  }
