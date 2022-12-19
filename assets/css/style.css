@@ -137,11 +137,18 @@ button.resume-button {
     margin: 0;
 }
 
+.project-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
 .project {
     border: 3px solid white;
-    width: 100%;
-    height: auto;
-    margin: 0 20px 0 0;
     position: relative;
 }
 
@@ -152,7 +159,6 @@ button.resume-button {
 img {
     width: 100%;
     height: auto;
-    z-index: -1;
 }
 
 .project img {
@@ -170,22 +176,32 @@ img {
   }
 
   @media only screen and (max-width: 800px) {
+    
     .profile-picture {
         display: none;
     }
-    .even-columns {
-        padding: 0;
+    
+    .project-grid {
+        display: block;
     }
+
+    .project+.project {
+        margin: 1.5rem 0 0 0;
+    }
+   
     p, li, nav a, button {
         font-size: 12px;
     }
+    
     footer {
         display: block;
     }
+   
     .nav-links li {
         display: inline-block;
         padding: 0px;
     }
+   
     .project h3, .project p {
         width: 50%;
     }
